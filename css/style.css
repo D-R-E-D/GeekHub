@@ -28,21 +28,21 @@ nav {
     border-bottom: 3px solid silver;
 }
 
- nav li {
+nav li {
     margin-right: 10px;
     display: inline-block;
 }
 
- li {
+li {
      list-style: none;
  }
  
- a {
+a {
      text-decoration: none;
      color: #000;
  }
 
- main {
+main {
      display: inline-block;
      margin-left: 20px;
      border-right: 3px solid silver;
@@ -53,18 +53,18 @@ main ul {
      padding-right: 10px;
  }
 
- aside {
+aside {
      width: 200px;
      margin-right: 20px;
      float: right;
      border-left: 3px solid silver;
  }
 
- article {
+article {
      padding-left: 10px;
  }
 
- footer {
+footer {
      position: absolute;
      bottom: 0;
      width: 100%;
@@ -73,7 +73,7 @@ main ul {
      border-top: 3px solid silver;
  }
 
- footer li {
+footer li {
      margin-right: 10px;
      display: inline-block;
  }
