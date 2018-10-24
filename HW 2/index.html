@@ -8,7 +8,7 @@
 </head>
 <body>
     <h2>Profile edit page</h2>
-    <form method="post">
+    <form action="https://postman-echo.com/post" method="post">
         <fieldset>
             <legend>Basic info</legend>
             <ul>
@@ -29,7 +29,7 @@
                 </li>
                 <li>
                     <label for="tel">Phone</label>
-                    <input type="tel" id="tel" placeholder="380" size="30" name="password">
+                    <input type="tel" id="tel" placeholder="380" size="30" name="phone">
                 </li>
                 <li>
                     <label for="mail">Email</label>
@@ -38,7 +38,7 @@
                 <li>
                     <input type="checkbox" id="check" name="private-email">
                     <label for="check">Keep my email address private</label><br>
-                     We'll remove your public profile email and use 1978331+username@user.noreplay.localhos
+                     <p>We'll remove your public profile email and use 1978331+username@user.noreplay.localhos</p>
                 </li>
                 <li>
                     <label for="date">DOB</label>
@@ -95,6 +95,7 @@
                     <select id="country" name="user-country">
                         <option disabled="disabled" selected="selected">-Choose your country-</option>
                         <option value="Ukraine">Ukraine</option>
+                        <option disabled>---------------------------------------------</option>
                         <option value="USA">USA</option>
                         <option  value="Thailand">Thailand</option>
                         <option value="Spain">Spain</option>
