@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h2>Profile edit page</h2>
+    <form action="https://postman-echo.com/post" method="post">
+        <fieldset>
+            <legend>Basic info</legend>
+            <ul>
+                <li>
+                    <input type="hidden" name="id" value="725">
+                </li>
+                <li>
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" size="30" name="first_name">
+                </li>
+                <li>
+                    <label for="sname">Second Name</label>
+                    <input type="text" id="sname" size="30" name="second_name">
+                </li>
+                <li>
+                    <label for="pass">Password</label>
+                    <input type="password" id="pass" size="30" name="password">
+                </li>
+                <li>
+                    <label for="tel">Phone</label>
+                    <input type="tel" id="tel" placeholder="380" size="30" name="phone">
+                </li>
+                <li>
+                    <label for="mail">Email</label>
+                    <input type="email" id="mail" placeholder="myemail@placeholder.com" size="30" name="email" >
+                </li>
+                <li>
+                    <input type="checkbox" id="check" name="private-email">
+                    <label for="check">Keep my email address private</label>
+                     <p>We'll remove your public profile email and use 1978331+username@user.noreplay.localhos</p>
+                </li>
+                <li>
+                    <label for="date">DOB</label>
+                    <input type="date" id="date" name="user-dob">
+                </li>
+                <li>
+                    <label for="url">Blog url</label>
+                    <input type="url" id="url" size="30" name="user-url">
+                </li>
+                <li>
+                    <label for="about">About me</label>
+                    <textarea name="about-me" id="about" cols="30" rows="10"></textarea>
+                </li>
+                <li>
+                    <label for="picture">Profile picture</label>
+                    <input type="image" id="picture" value="Choose the file" name="user-img">
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>Professional info</legend>
+            <ul>
+                <li>
+                    <label for="desire">Desire study</label>
+                    <input type="range" id="desire" name="user-desire">
+                </li>
+                <li>
+                    <label for="exp">Experience</label>
+                    <input type="number" id="exp" name="user-exp">
+                </li>
+                <li>
+                    <p>Development Experience</p>
+                    <ul>
+                        <li>
+                            <label for="lp">Learning to Program</label>
+                            <input type="radio" id="lp" name="devexp">
+                        </li>
+                        <li>
+                            <label for="jd">Junior Developer</label>
+                            <input type="radio" id="jd" name="devexp">
+                        </li>
+                        <li>
+                            <label for="md">Mid-Level Developer</label>
+                            <input type="radio" id="md" name="devexp">
+                        </li>
+                        <li>
+                            <label for="sd">Senior Developer</label>
+                            <input type="radio" id="sd" name="devexp">
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <label for="country">Country</label>
+                    <select id="country" name="user-country">
+                        <option disabled="disabled" selected="selected">-Choose your country-</option>
+                        <option value="Ukraine">Ukraine</option>
+                        <option disabled>---------------------------------------------</option>
+                        <option value="USA">USA</option>
+                        <option  value="Thailand">Thailand</option>
+                        <option value="Spain">Spain</option>
+                    </select>
+                </li>
+                <li>
+                    <p>Skill</p>
+                    <ul>
+                        <li>
+                            <input type="checkbox" name="skill1" value="html" id="html">
+                            <label for="html">HTML</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="skill2" value="css" id="css">
+                            <label for="css">CSS</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="skill3" value="javascript" id="js">
+                            <label for="js">JavaScript</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="skill4" value="r" id="r">
+                            <label for="r">R</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="skill5" value="scala" id="scala">
+                            <label for="scala">Scala</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="skill6" value="haskell" id="haskell">
+                            <label for="haskell">Haskell</label>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </fieldset>
+        <button type="reset">Cancel</button>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
