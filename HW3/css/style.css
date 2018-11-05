@@ -1,9 +1,15 @@
 
+body {
+    width: 1980px;
+    margin: 0 auto;
+    color: #878c8d;
+    font-family: Roboto-Light, sans-serif;
+}
 
 header{
     width: 100%;
     height: 10%;
-    background-color: crimson;
+    background-image: linear-gradient(to left, #bf1e2e, #f1592a );
     display: flex;
     justify-content: flex-end;
 }
@@ -11,73 +17,295 @@ header{
 .container {
     margin: 0 auto;
     width: 1200px;
-}
-
-.main-nav {
     display: flex;
-    justify-content: flex-end;
 }
 
-ul {
-    list-style: none;
+.logo {
+    display: inline-block;
 }
 
-.dropdown-menu {
-    margin-left: 30px;
-}
-
-.dropdown-menu .dropdown {
-    visibility: hidden;
-    opacity: 0;
-    position: absolute;
-    transition: all 0.5s ease;
-    margin-top: 1rem;
-    left: 0;
+h1 {
     display: none;
 }
 
-.dropdown-menu:hover > .dropdown,
-.dropdown-menu:focus-within > .dropdown,
-.dropdown:hover,
-.dropdown:focus{
-    visibility: visible;
-    opacity: 1;
-    display: block;
+.main-nav {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    text-transform: uppercase;
+    font-size: 12px;
 }
 
-.main-nav li .dropdown li {
-    clear: both;
+.main-nav ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
-a {
-    text-decoration: none;
-    color: #000;
-}
-
-li {
-    display: block;
-    float: left;
-    padding: 1rem;
+.main-nav ul li {
     position: relative;
+}
+
+.main-nav a {
+    padding: 34px 10px 30px;
+    text-align: center;
+    display: inline-flex;
+    color: #ffffff;
     text-decoration: none;
-    transition-duration: 0.5s;
 }
 
-li:hover,
-li:focus-within {
-    background: red;
-    cursor: pointer;
+.main-nav a:hover {
+    padding: 34px 10px 30px;
+    background-color: #ffffff;
+    color: #2a2a2a;
 }
 
-li:focus-within a {
-    outline: none;
+.dropdown-menu {
+    margin-left: 86px;
+}
+
+.dropdown {
+    flex-direction: column;
+    width: 100%;
+    transition: max-height .4s, opacity .3s;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+}
+
+.dropdown > .menu-button {
+    height: 100%;
+    transition: transform .4s;
+    transform: translateY(-300%);
+    background: #aaa;
+}
+
+.dropdown-menu:hover .dropdown {
+    max-height: 300px;
+    opacity: 1;
+    background-color: #aaaaaa;
+}
+
+.dropdown-menu:hover .dropdown .menu-button {
+    transform: translateY(0%);
 }
 
 .content {
+    width: 100%;
     display: flex;
     justify-content: space-between;
+    padding-top: 40px;
 }
 
-main {
-    width: 33.3%;
+.slider {
+    background-size: cover;
+    background-image: url(../img/slider-bg.png);
+    width: 1980px;
+    height: 739px;
+}
+
+.left li {
+    margin-bottom: 18px;
+    font-size: 18px;
+    text-transform: uppercase;
+    display: block;
+    position: relative;
+    cursor: pointer;
+}
+
+.left li:hover {
+    color: #df4a2b;
+}
+
+.li-foto:before {
+    content: "";
+    background:  url(../img/icon/icon_2.png) no-repeat;
+    background-size: contain;
+    position: absolute;
+    width: 30px;
+    height: 22px;
+    top: -5px;
+    left: -42px;
+}
+
+.li-video:before {
+    content: "";
+    background: url(../img/icon/icon.png) no-repeat ;
+    background-size: contain;
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    top: -5px;
+    left: -42px;
+}
+
+.li-rada:before {
+    content: "";
+    background: url(../img/icon/icon_3.png) no-repeat;
+    background-size: contain;
+    position: absolute;
+    width: 23px;
+    height: 26px;
+    top: -5px;
+    left: -42px;
+}
+
+.li-partner:before {
+    content: "";
+    background: url(../img/icon/icon_4.png) no-repeat;
+    background-size: contain;
+    position: absolute;
+    width: 30px;
+    height: 22px;
+    top: -5px;
+    left: -42px;
+}
+
+.li-forum:before {
+    content: "";
+    background: url(../img/icon/icon_4.png) no-repeat ;
+    background-size: contain;
+    position: absolute;
+    width: 25px;
+    height: 23px;
+    top: -5px;
+    left: -42px;
+}
+
+h2 {
+     font-size: 30px;
+     color: #e14a2b;
+     margin-bottom: 33px;
+}
+
+.news figure {
+     width: 486px;
+}
+
+h3 {
+     font-size: 18px;
+     color: #484c4d;
+     padding: 11px 15px 13px;
+}
+
+.news {
+     margin-bottom: 30px;
+     display: flex;
+     flex-direction: column;
+     border: 1px solid rgba(0, 0, 0, 0.2);
+     border-radius: 6px;
+}
+
+.news img {
+     width: 487px;
+}
+
+.news figure p {
+     width: 444px;
+     padding: 0 24px 10px 14px;
+     height: 45px;
+     overflow: hidden;
+}
+
+.news-footer {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     border-top: 1px solid rgba(0, 0, 0, 0.2);
+     padding: 10px;
+}
+
+.news-footer p:before {
+     width: 18px;
+     height: 12px;
+     content: "";
+     background: url(../img/icon/eye.png) no-repeat ;
+     position: absolute;
+     display: inline;
+     margin: 2px -25px;
+}
+
+.galery {
+     margin-bottom: 40px;
+}
+
+.galery figure {
+     width: 233px;
+     border: 1px solid rgba(0, 0, 0, 0.2);
+     border-radius: 6px;
+     overflow: hidden;
+}
+
+.galery img {
+     width: 100%;
+}
+
+.galery p {
+     padding: 11px 16px 11px 14px;
+}
+
+.video {
+     width: 235px;
+}
+
+.video video {
+     width: 100%;
+}
+
+.video p {
+     padding: 11px 16px 11px 14px;
+}
+
+.video-border {
+     overflow: hidden;
+     border: 1px solid rgba(0, 0, 0, 0.2);
+     border-radius: 6px;
+}
+
+.main-footer {
+     padding-top: 18px;
+     padding-bottom: 120px;
+     border-top: 4px solid transparent;
+     border-image: linear-gradient(to left, #bf1e2e, #f1592a );
+     border-image-slice: 1;
+ }
+
+.main-footer nav {
+     width: 100%;
+     display: flex;
+     justify-content: space-between;
+}
+
+.footer-menu {
+     width: 685px;
+     display: flex;
+     justify-content: space-between;
+}
+
+.footer-menu a {
+     text-decoration: none;
+     font-size: 12px;
+     text-transform: uppercase;
+     color: #898989;
+}
+ 
+.footer-menu a:hover {
+     color: #cd2e2d;
+}
+ 
+.social {
+     display: flex;
+     justify-content: space-between;
+}
+
+.social li {
+     width: 20px;
+     height: 20px;
+     margin-right: 5px;
+     background-color: #484c4d;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     border-radius: 4px;
+     opacity: 0.4;
 }
