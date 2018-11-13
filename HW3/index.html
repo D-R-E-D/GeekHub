@@ -17,6 +17,7 @@
                     <img src="img/logo.png" alt="logo">
                 </a>
             </div>
+            <a name="top"></a>
             <nav class="main-nav">
                 <ul>
                     <li><a href="#">Головна</a></li>
@@ -38,79 +39,130 @@
             </nav>
         </div>
     </header>
-    <div class="slider"></div>
+    <div class="all-slider">
+        <input checked type="radio" name="respond" id="desktop">
+            <article class="slider">
+                <input checked type="radio" name="slider" id="switch1">
+                <input type="radio" name="slider" id="switch2">
+                <input type="radio" name="slider" id="switch3">
+                <input type="radio" name="slider" id="switch4">
+                <input type="radio" name="slider" id="switch5">
+                <div class="slides">
+                    <div class="overflow">
+                        <div class="slider-image">
+                            <article><img src="img/slider-bg.png" alt="Слайд 1"></article>
+                            <article><img src="img/slider-bg.png" alt="Слайд 2"></article>
+                            <article><img src="img/slider-bg.png" alt="Слайд 3"></article>
+                            <article><img src="img/slider-bg.png" alt="Слайд 4"></article>
+                            <article><img src="img/slider-bg.png" alt="Слайд 5"></article>
+                        </div>
+                    </div>
+                </div>
+                <div class="controls">
+                    <label for="switch1"></label>
+                    <label for="switch2"></label>
+                    <label for="switch3"></label>
+                    <label for="switch4"></label>
+                    <label for="switch5"></label>
+                </div>
+                <div class="active">
+                    <label for="switch1">
+                        <p class="date">Нд</p>
+                        <p class="number">21</p>
+                        <hr>
+                        <p class="month">лютого</p>
+                    </label>
+                    <label for="switch2">
+                        <p class="date">Пн</p>
+                        <p class="number">22</p>
+                        <hr>
+                        <p class="month">лютого</p>
+                    </label>
+                    <label for="switch3">
+                        <p class="date">Вт</p>
+                        <p class="number">23</p>
+                        <hr>
+                        <p class="month">лютого</p>
+                    </label>
+                    <label for="switch4">
+                        <p class="date">Ср</p>
+                        <p class="number">24</p>
+                        <hr>
+                        <p class="month">лютого</p>
+                    </label>
+                    <label for="switch5">
+                        <p class="date">Чт</p>
+                        <p class="number">25</p>
+                        <hr>
+                        <p class="month">лютого</p>
+                    </label>
+                </div>
+            </article>
+    </div>
     <div class="container">
         <div class="content">
             <aside class="left">
                 <ul>
-                    <li class="li-foto">Фотоархів</li>
-                    <li class="li-video">Відеоархів</li>
-                    <li class="li-rada">Піклувальна рада</li>
-                    <li class="li-partner">Партнери</li>
-                    <li class="li-forum">Форум</li>
+                    <li class="li-foto"><a href="#">Фотоархів</a></li>
+                    <li class="li-video"><a href="#">Відеоархів</a></li>
+                    <li class="li-rada"><a href="#">Піклувальна рада</a></li>
+                    <li class="li-partner"><a href="#">Партнери</a></li>
+                    <li class="li-forum"><a href="#">Форум</a></li>
                 </ul>
             </aside>
             <main>
                 <h2>Новини</h2>
                 <article class="news">
-                    <figure>
                         <img src="img/news.png" alt="Балет">
-                        <figcaption>
+                        <div class="description">
                             <h3>Назва новини</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                exercitation </p>
-                        </figcaption>
-                    </figure>
-                    <footer class="news-footer">
-                        <time datetime="12.02.2015">12.02.2015</time>
-                        <p>8</p>
-                    </footer>
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation </p>
+                            <footer class="news-footer">
+                                <time datetime="12.02.2015">12.02.2015</time>
+                                <p>8</p>
+                            </footer>
+                        </div>
                 </article>
                 <article class="news">
-                    <figure>
-                        <img src="img/news.png" alt="Балет">
-                        <figcaption>
-                            <h3>Назва новини</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                exercitation </p>
-                        </figcaption>
-                    </figure>
-                    <footer class="news-footer">
-                        <time datetime="12.02.2015">12.02.2015</time>
-                        <p>8</p>
-                    </footer>
+                    <img src="img/news.png" alt="Балет">
+                    <div class="description">
+                        <h3>Назва новини</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                            exercitation </p>
+                        <footer class="news-footer">
+                            <time datetime="12.02.2015">12.02.2015</time>
+                            <p>8</p>
+                        </footer>
+                    </div>
                 </article>
                 <article class="news">
-                    <figure>
-                        <img src="img/news.png" alt="Балет">
-                        <figcaption>
-                            <h3>Назва новини</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                exercitation </p>
-                        </figcaption>
-                    </figure>
-                    <footer class="news-footer">
-                        <time datetime="12.02.2015">12.02.2015</time>
-                        <p>8</p>
-                    </footer>
+                    <img src="img/news.png" alt="Балет">
+                    <div class="description">
+                        <h3>Назва новини</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                            exercitation </p>
+                        <footer class="news-footer">
+                            <time datetime="12.02.2015">12.02.2015</time>
+                            <p>8</p>
+                        </footer>
+                    </div>
                 </article>
                 <article class="news">
-                    <figure>
-                        <img src="img/news.png" alt="Балет">
-                        <figcaption>
-                            <h3>Назва новини</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                exercitation </p>
-                        </figcaption>
-                    </figure>
-                    <footer class="news-footer">
-                        <time datetime="12.02.2015">12.02.2015</time>
-                        <p>8</p>
-                    </footer>
+                    <img src="img/news.png" alt="Балет">
+                    <div class="description">
+                        <h3>Назва новини</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                            exercitation </p>
+                        <footer class="news-footer">
+                            <time datetime="12.02.2015">12.02.2015</time>
+                            <p>8</p>
+                        </footer>
+                    </div>
                 </article>
             </main>
             <aside class="right">
@@ -131,6 +183,7 @@
                     </div>
                 </article>
             </aside>
+            <a href="#top" class="anchor"></a>
         </div>
     </div>
     <footer class="main-footer">
