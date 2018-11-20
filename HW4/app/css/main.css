@@ -1,0 +1,158 @@
+.white {
+  color: #fff; }
+
+.grey {
+  color: #808080; }
+
+.red {
+  color: #ff0000; }
+
+body {
+  width: 100%;
+  margin: 0 auto;
+  font-size: 18px;
+  font-family: Lato, sans-serif; }
+
+.simple {
+  height: 100%;
+  background: url("../img/simple-bg.png") top center no-repeat; }
+
+.main-header {
+  width: 100%;
+  padding: 41px 200px 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box; }
+  .main-header h1 {
+    display: none; }
+  .main-header ul {
+    width: 413px;
+    display: flex;
+    justify-content: space-around; }
+    .main-header ul a {
+      color: #fff;
+      text-transform: uppercase;
+      text-decoration: none; }
+      .main-header ul a:hover {
+        text-decoration: line-through; }
+
+.container, .container-wrap {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between; }
+
+.simple_article h2 {
+  width: 413px;
+  font-size: 72px;
+  padding: 95px 0 43px; }
+
+.simple_article p {
+  width: 554px;
+  font-size: 24px;
+  padding-bottom: 100px; }
+  .simple_article p span {
+    font-weight: bold; }
+
+.simple_article a {
+  text-align: center;
+  text-decoration: none;
+  color: #f42f39; }
+  .simple_article a p {
+    width: 225px;
+    padding: 17px 52px;
+    background-color: #fff;
+    text-decoration: none;
+    border-radius: 25px; }
+
+.phone {
+  width: 480px;
+  height: 820px;
+  background-image: url("../img/i-phone-7-silver.png"); }
+
+.easy-messaging, .kit {
+  display: flex;
+  justify-content: space-around; }
+  .easy-messaging .img-wrapper, .kit .img-wrapper {
+    display: flex;
+    justify-content: flex-end; }
+
+.pos-rel, .pos-rel-r {
+  position: relative; }
+
+.pos-abs, .pos-abs-r {
+  position: absolute;
+  margin-top: 60px;
+  margin-left: 200px; }
+
+.art-style {
+  width: 557px;
+  padding-top: 220px; }
+  .art-style p {
+    line-height: 32px; }
+
+.header3 {
+  padding-bottom: 40px;
+  font-size: 60px;
+  font-weight: bold; }
+
+.pos-abs-r {
+  margin: 0; }
+
+.pos-rel-r {
+  margin-right: 140px;
+  margin-top: 70px; }
+
+.container-wrap {
+  flex-wrap: wrap;
+  justify-content: center; }
+
+.wps {
+  padding-top: 80px;
+  display: flex;
+  flex-direction: column; }
+  .wps .comments-list {
+    padding: 90px 0 240px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between; }
+    .wps .comments-list .comments {
+      width: 370px; }
+      .wps .comments-list .comments .quote-comments {
+        padding-bottom: 25px;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        position: relative; }
+        .wps .comments-list .comments .quote-comments::before, .wps .comments-list .comments .quote-comments::after {
+          content: '';
+          position: absolute;
+          left: 20px;
+          bottom: -20px;
+          border: 10px solid transparent;
+          border-top: 10px solid rgba(0, 0, 0, 0.1); }
+        .wps .comments-list .comments .quote-comments::after {
+          border-top: 10px solid white;
+          bottom: -16px; }
+        .wps .comments-list .comments .quote-comments .comments-text {
+          padding: 28px 57px 26px 30px;
+          line-height: 32px;
+          font-style: italic; }
+        .wps .comments-list .comments .quote-comments cite {
+          padding-left: 30px; }
+          .wps .comments-list .comments .quote-comments cite .comment-link {
+            padding-bottom: 30px;
+            text-decoration: none;
+            color: #f42f39; }
+
+.avatar-comments {
+  padding-top: 30px;
+  display: flex; }
+  .avatar-comments .avatar {
+    border-radius: 30px; }
+  .avatar-comments .avatar-description {
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .avatar-comments .avatar-description p {
+      text-transform: uppercase; }

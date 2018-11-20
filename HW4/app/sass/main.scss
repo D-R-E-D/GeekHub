@@ -1,0 +1,210 @@
+$fs : 18px;
+$ff : Lato, sans-serif;
+
+.white {
+  color: #fff;
+}
+
+.grey {
+  color: #808080;
+}
+
+.red {
+  color: #ff0000;
+}
+
+body {
+  width: 100%;
+  margin: 0 auto;
+  font-size: $fs;
+  font-family: $ff;
+}
+
+.simple {
+  height: 100%;
+  background: url("../img/simple-bg.png") top center no-repeat;
+}
+
+.main-header {
+  width: 100%;
+  padding: 41px 200px 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  h1 {
+    display: none;
+  }
+  ul {
+    width: 413px;
+    display: flex;
+    justify-content: space-around;
+    a {
+      color: #fff;
+      text-transform: uppercase;
+      text-decoration: none;
+      &:hover {
+        text-decoration: line-through;
+      }
+    }
+  }
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.simple_article {
+  h2 {
+    width: 413px;
+    font-size: $fs*4;
+    padding: 95px 0 43px;
+  }
+  p{
+    width: 554px;
+    font-size: 24px;
+    padding-bottom: 100px;
+    span {
+      font-weight: bold;
+    }
+  }
+  a {
+    text-align: center;
+    text-decoration: none;
+    color: #f42f39;
+    p {
+      width: 225px;
+      padding: 17px 52px;
+      background-color: #fff;
+      text-decoration: none;
+      border-radius: 25px;
+    }
+  }
+}
+
+.phone {
+  width: 480px;
+  height: 820px;
+  background-image: url('../img/i-phone-7-silver.png');
+}
+
+.easy-messaging {
+  display: flex;
+  justify-content: space-around;
+  .img-wrapper {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+.pos-rel {
+  position: relative;
+}
+
+.pos-abs {
+  position: absolute;
+  margin-top: 60px;
+  margin-left: 200px;
+}
+
+.art-style {
+  width: 557px;
+  padding-top: 220px;
+  p {
+    line-height: 32px;
+  }
+}
+
+.header3{
+  padding-bottom: 40px;
+  font-size: $fs+42px;
+  font-weight: bold;
+}
+
+.kit {
+  @extend .easy-messaging;
+}
+.pos-abs-r {
+  @extend .pos-abs;
+  margin: 0;
+}
+
+.pos-rel-r {
+  @extend .pos-rel;
+  margin-right: 140px;
+  margin-top: 70px;
+}
+
+.container-wrap {
+  @extend  .container;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.wps {
+  padding-top: 80px;
+  display: flex;
+  flex-direction: column;
+  .comments-list {
+    padding: 90px 0 240px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    .comments {
+      width: 370px;
+      .quote-comments {
+        padding-bottom: 25px;
+        border: 1px solid rgba(0,0,0,0.1);
+        position: relative;
+        &::before, &::after {
+          content: '';
+          position: absolute;
+          left: 20px; bottom: -20px;
+          border: 10px solid transparent;
+          border-top: 10px solid rgba(0,0,0,0.1);
+        }
+        &::after {
+          border-top: 10px solid white;
+          bottom: -16px;
+        }
+        .comments-text {
+          padding: 28px 57px 26px 30px;
+          line-height: 32px;
+          font-style: italic;
+        }
+        cite {
+          padding-left: 30px;
+          .comment-link {
+            padding-bottom: 30px;
+            text-decoration: none;
+            color: #f42f39;
+          }
+        }
+      }
+    }
+  }
+}
+
+.avatar-comments {
+  padding-top: 30px;
+  display: flex;
+  .avatar{
+    border-radius: 30px;
+  }
+  .avatar-description {
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    p {
+      text-transform: uppercase;
+    }
+  }
+}
+
+
+
+
