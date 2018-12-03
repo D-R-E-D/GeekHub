@@ -36,19 +36,24 @@ body {
   h1 {
     display: none;
   }
-  ul {
-    width: 413px;
-    display: flex;
-    justify-content: space-around;
-    a {
-      color: #fff;
-      text-transform: uppercase;
-      text-decoration: none;
-      &:hover {
-        text-decoration: line-through;
-      }
+}
+
+.main-nav {
+  width: 413px;
+  display: flex;
+  justify-content: space-around;
+  a {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    &:hover {
+      text-decoration: line-through;
     }
   }
+}
+
+.menubtn {
+  display: none;
 }
 
 .container {
@@ -377,6 +382,7 @@ cite {
   padding-right: 20px;
 }
 
+@import "_mobile-responsive.scss";
 
 
 
