@@ -27,6 +27,7 @@
 
   .menubtn {
     width: 20%;
+    height: 20%;
     display: block;
     text-align: center;
     &:hover {
@@ -51,6 +52,8 @@
   }
 
   .menubtn__icon {
+    width: 60px;
+    height: 60px;
     fill: #fff;
   }
 
@@ -75,8 +78,7 @@
     }
     p {
       width: 100%;
-      padding-bottom: 50px;
-
+      margin-bottom: 50px;
     }
   }
 
@@ -175,14 +177,11 @@
       padding: 50px 0 80px;
     }
     p {
-      padding-bottom: 80px;
+      margin-bottom: 80px;
       font-size: $fs+12;
     }
     a {
-      padding-bottom: 100px;
-      p {
-        padding: 17px 40px;
-      }
+      padding: 20px 20px;
     }
   }
 

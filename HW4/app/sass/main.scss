@@ -34,7 +34,7 @@ body {
   align-items: center;
   box-sizing: border-box;
   h1 {
-    display: none;
+    visibility: hidden;
   }
 }
 
@@ -72,7 +72,7 @@ body {
   p{
     width: 554px;
     font-size: 24px;
-    padding-bottom: 100px;
+    margin-bottom: 100px;
     span {
       font-weight: bold;
     }
@@ -81,13 +81,10 @@ body {
     text-align: center;
     text-decoration: none;
     color: #f42f39;
-    p {
-      width: 225px;
-      padding: 17px 52px;
-      background-color: #fff;
-      text-decoration: none;
-      border-radius: 25px;
-    }
+    width: 225px;
+    padding: 20px 70px;
+    background-color: #fff;
+    border-radius: 25px;
   }
 }
 
@@ -128,6 +125,10 @@ body {
   padding-bottom: 40px;
   font-size: $fs+42px;
   font-weight: bold;
+  &::after {
+    content: ".";
+    color: #ff0000;
+  }
 }
 
 .kit {
@@ -290,6 +291,10 @@ cite {
     padding-bottom: 50px;
     font-size: $fs+42px;
     font-weight: bold;
+    &::after {
+      content: ".";
+      color: #ff0000;
+    }
   }
   &__link {
     padding-bottom: 60px;
@@ -314,7 +319,6 @@ cite {
     outline: none;
     background-color: #f8f8f8;
   }
-
   &__btn {
     width: 180px;
     height: 50px;
