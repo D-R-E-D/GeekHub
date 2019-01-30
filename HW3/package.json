@@ -9,17 +9,19 @@
     "lint-css": "stylelint --config .stylelintrc ./src/**"
   },
   "lint-staged": {
-    "*.js": [
-      "eslint --config .eslintrc.js js/",
-      "git add"
-    ],
-    "*.css": [
-      "stylelint --config .stylelintrc ./css/**",
-      "git add"
-    ],
-    "ignore": [
-      "gulpfile.js"
-    ]
+    "linters": {
+      "*.js": [
+        "eslint --config .eslintrc.js js/",
+        "git add"
+      ],
+      "*.css": [
+        "stylelint --config .stylelintrc ./css/**",
+        "git add"
+      ],
+      "ignore": [
+        "gulpfile.js"
+      ]
+    }
   },
   "husky": {
     "hooks": {
