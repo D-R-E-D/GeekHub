@@ -10,11 +10,11 @@
   },
   "lint-staged": {
     "*.js": [
-      "eslint --config .eslintrc.js src/",
+      "eslint --config .eslintrc.js js/",
       "git add"
     ],
     "*.css": [
-      "stylelint --config .stylelintrc ./src/**",
+      "stylelint --config .stylelintrc ./css/**",
       "git add"
     ],
     "ignore": [
