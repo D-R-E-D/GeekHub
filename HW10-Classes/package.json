@@ -7,17 +7,19 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "lint-staged": {
-    "*.js": [
-      "eslint --config .eslintrc.js",
-      "git add"
-    ],
-    "*.css": [
-      "stylelint --config .stylelintrc",
-      "git add"
-    ],
-    "ignore": [
-      "gulpfile.js"
-    ]
+    "linters": {
+      "*.js": [
+        "eslint --config .eslintrc.js",
+        "git add"
+      ],
+      "*.css": [
+        "stylelint --config .stylelintrc",
+        "git add"
+      ],
+      "ignore": [
+        "gulpfile.js"
+      ]
+    }
   },
   "husky": {
     "hooks": {
