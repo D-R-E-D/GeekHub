@@ -2,8 +2,11 @@
   "name": "hw10-classes",
   "version": "1.0.0",
   "description": "Classes",
-  "main": ".eslintrc.js",
+  "main": "index.js",
   "scripts": {
+    "lint": "lint-staged",
+    "lint-js": "eslint --config .eslintrc.js ./",
+    "lint-css": "stylelint --config .stylelintrc ./",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "lint-staged": {
