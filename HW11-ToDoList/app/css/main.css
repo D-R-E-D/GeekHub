@@ -1,0 +1,61 @@
+
+.main-header {
+    text-align: center;
+    background-color: #C0C0C0;
+}
+
+.title {
+    margin-bottom: 30px;
+    font-size: 90px;
+    font-weight: 500;
+}
+
+.enter-text {
+    margin-bottom: 30px;
+    padding-bottom: 40px;
+}
+
+.enter-text__field {
+    width: 500px;
+    height: 30px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+.enter-text__btn {
+    height: 35px;
+    font-size: 20px;
+    background-color: #90EE90;
+    border-radius: 20px;
+}
+
+.tasks__list {
+    list-style: decimal;
+    width: 100%;
+}
+
+.tasks__item {
+    margin: 20px 40px;
+    font-size: 30px;
+    border: 1px solid #808080;
+    border-radius: 10px;
+    background-color: #90EE90;
+}
+
+.tasks__btn-del {
+    width: 100px;
+    font-size: 20px;
+    background-color: #FF536F;
+    float: right;
+    border-radius: 10px;
+}
+
+.tasks_done {
+    width: 30px;
+    height: 25px;
+    float: left;
+}
+
+.line-through {
+    text-decoration: line-through;
+}
