@@ -1,10 +1,33 @@
-const ENTER_FIELD = document.getElementById('enter-text__field');
-const ENTER_BTN = document.getElementById('enter-text__btn');
-const TASK_LIST = document.getElementById('tasks__list');
+import { Item, ENTER_BTN, ENTER_FIELD } from './class.mjs';
+
+const ITEMS = [];
+
+ENTER_BTN.addEventListener('click', () => {
+    ITEMS.push(ENTER_FIELD.value);
+    console.log(ITEMS);
+    const ITEM = new Item();
+    ITEM.create();
+    const BTN_DEL = document.getElementById('btn-del');
+    Item.clear();
+    BTN_DEL.addEventListener('click', () => {
+        const TEXT = BTN_DEL.parentNode.textContent;
+        const POS = ITEMS.indexOf(TEXT);
+        ITEMS.splice(POS, 1);
+        console.log(ITEMS);
+        BTN_DEL.parentNode.remove();
+    });
+});
+
+ENTER_FIELD.addEventListener('keypress', (event) => {
+    if (event.key === 'Enter') {
+        ENTER_BTN.click();
+    }
+});
 
 
 // Cтворюю LI з відповідними атрибутами і передаю в нього зміст ENTER_FIELD.
 
+/*
 ENTER_BTN.addEventListener('click', () => {
     if (ENTER_FIELD.value === '') {
         alert('Enter the task');
@@ -52,3 +75,4 @@ ENTER_FIELD.addEventListener('keypress', (event) => {
         ENTER_BTN.click();
     }
 });
+*/

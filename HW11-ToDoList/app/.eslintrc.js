@@ -17,6 +17,8 @@ module.exports = {
                 SwitchCase: 1
             }
         ],
+        'import/extensions': [ {'mjs': 'always'}],
+        'no-underscore-dangle': ["error", { "allowAfterThis": true }],
         'linebreak-style': ['error', 'unix'],
         quotes: ['error', 'single'],
         semi: ['error', 'always'],
